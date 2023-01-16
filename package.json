@@ -1,0 +1,17 @@
+{
+  "name": "agora-app-builder",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16"
+  },
+  "scripts": {
+    "start": "agora-app-builder-cli",
+    "ci": "npm install && agora-app-builder-cli install  && agora-app-builder-cli build web --prod &&  cp -r Builds/web hackathon/dist && cp hackathon/vercel.json hackathon/dist && cp ./apple-app-site-association ./hackathon/dist",
+    "start:info": "agora-app-builder-cli --info"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "agora-app-builder-cli": "2.0.9"
+  }
+}
