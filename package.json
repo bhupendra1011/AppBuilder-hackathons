@@ -13,5 +13,8 @@
   "license": "MIT",
   "dependencies": {
     "agora-app-builder-cli": "2.0.9"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
